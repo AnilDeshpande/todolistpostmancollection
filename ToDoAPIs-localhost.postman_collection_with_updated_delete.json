@@ -1,0 +1,279 @@
+{
+	"id": "4e2614d2-1365-f125-2b5a-b52150d9767b",
+	"name": "ToDoAPIs-localhost",
+	"description": "",
+	"order": [
+		"40574dca-b9c9-ff76-16f9-77bf699f67ac",
+		"98da313d-e943-7efa-4d47-660ae2dea2a0",
+		"bbae3e43-18e8-b595-3c8a-9eeff5fd1fe4",
+		"ef8cef6e-749c-b54e-9c5f-9bd7bf979674",
+		"9bf081ab-fbb9-1b72-fb3a-1dfedd1133cc",
+		"07cf07ea-fa74-ea4e-e799-2f17ef0279c9",
+		"9aaf6408-960c-eec8-7c84-9d8ca983929b",
+		"30cb55b9-1a63-5ca9-2c4f-7f6bc18f421a"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1516609249212,
+	"owner": "112549",
+	"public": false,
+	"requests": [
+		{
+			"id": "07cf07ea-fa74-ea4e-e799-2f17ef0279c9",
+			"headers": "Content-Type: application/json\ntoken: 7C23DF12000236B93CF88ADCFF8E60A8\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "7C23DF12000236B93CF88ADCFF8E60A8",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/dotolist/webapi/todolists",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1525058706793,
+			"name": "Delete ToDoList",
+			"description": "",
+			"collectionId": "4e2614d2-1365-f125-2b5a-b52150d9767b",
+			"responses": [],
+			"rawModeData": "{\n        \"authorEmailId\": \"Akshay@samplemail.com\",\n        \"date\": 1524798109035,\n        \"id\": 1,\n        \"place\": \"from Desk\",\n        \"todoString\": \"Get editing done\"\n    }"
+		},
+		{
+			"id": "30cb55b9-1a63-5ca9-2c4f-7f6bc18f421a",
+			"headers": "Content-Type: application/json\ntoken: B08C8902400B83BF22AA519BEFBC8AC0\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "B08C8902400B83BF22AA519BEFBC8AC0",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/dotolist/webapi/todolists/3",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "4e2614d2-1365-f125-2b5a-b52150d9767b",
+			"data": null,
+			"dataMode": "params",
+			"name": "DELETE WITH ID",
+			"description": "Just deleted With Id",
+			"descriptionFormat": "html",
+			"time": 1538314512959,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "40574dca-b9c9-ff76-16f9-77bf699f67ac",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/dotolist/webapi/authors",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1537264636826,
+			"name": "Register Author",
+			"description": "",
+			"collectionId": "4e2614d2-1365-f125-2b5a-b52150d9767b",
+			"responses": [],
+			"rawModeData": "{\n    \"authorEmailId\": \"AnilDeshpande@samplemail.com\",\n    \"authorName\": \"AnilDeshpande\",\n    \"authorPassword\":\"AnilDeshpande\"\n}"
+		},
+		{
+			"id": "98da313d-e943-7efa-4d47-660ae2dea2a0",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/dotolist/webapi/authors/login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1538314537345,
+			"name": "Login Author",
+			"description": "",
+			"collectionId": "4e2614d2-1365-f125-2b5a-b52150d9767b",
+			"responses": [],
+			"rawModeData": "{\n    \"authorEmailId\": \"AnilDeshpande@samplemail.com\",\n    \"authorName\": \"AnilDeshpande\",\n    \"authorPassword\":\"AnilDeshpande\"\n}"
+		},
+		{
+			"id": "9aaf6408-960c-eec8-7c84-9d8ca983929b",
+			"headers": "Content-Type: application/json\ntoken: 7C23DF12000236B93CF88ADCFF8E60A8\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "7C23DF12000236B93CF88ADCFF8E60A8",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/dotolist/webapi/todolists",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1525058704652,
+			"name": "Modifiy ToDoItem - Advanced",
+			"description": "",
+			"collectionId": "4e2614d2-1365-f125-2b5a-b52150d9767b",
+			"responses": [],
+			"rawModeData": "{\n\t\"currentToDoItem\":{\n        \"authorEmailId\": \"Akshay@samplemail.com\",\n        \"date\": 1524798155479,\n        \"id\": 3,\n        \"place\": \"from Desk\",\n        \"todoString\": \"Get publication done\"\n    }\n    ,\n    \"proposedToDoItem\":{\n        \"authorEmailId\": \"Akshay@samplemail.com\",\n        \"date\": 1524798155479,\n        \"id\": 3,\n        \"place\": \"ask Social Media Team\",\n        \"todoString\": \"Get social media publication done\"\n    }\n}"
+		},
+		{
+			"id": "9bf081ab-fbb9-1b72-fb3a-1dfedd1133cc",
+			"headers": "token: B08C8902400B83BF22AA519BEFBC8AC0\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "B08C8902400B83BF22AA519BEFBC8AC0",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/dotolist/webapi/todolists/AnilDeshpande@samplemail.com",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1538314535534,
+			"name": "Get ToDoList by an Author",
+			"description": "",
+			"collectionId": "4e2614d2-1365-f125-2b5a-b52150d9767b",
+			"responses": []
+		},
+		{
+			"id": "bbae3e43-18e8-b595-3c8a-9eeff5fd1fe4",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/dotolist/webapi/authors/signout",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1525058691933,
+			"name": "Signout",
+			"description": "",
+			"collectionId": "4e2614d2-1365-f125-2b5a-b52150d9767b",
+			"responses": [],
+			"rawModeData": "{\n    \"authorEmailId\": \"Akshay@samplemail.com\",\n    \"authorId\": 1,\n    \"authorName\": \"Akshay\"\n}"
+		},
+		{
+			"id": "ef8cef6e-749c-b54e-9c5f-9bd7bf979674",
+			"headers": "Content-Type: application/json\ntoken: B08C8902400B83BF22AA519BEFBC8AC0\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "B08C8902400B83BF22AA519BEFBC8AC0",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/dotolist/webapi/todolists",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1538314536591,
+			"name": "Add ToDoItem",
+			"description": "",
+			"collectionId": "4e2614d2-1365-f125-2b5a-b52150d9767b",
+			"responses": [],
+			"rawModeData": "{\n \"todoString\":\"To Be deleted\",\n \"authorEmailId\":\"AnilDeshpande@samplemail.com\",\n \"place\":\"from bed\"\n}"
+		}
+	]
+}

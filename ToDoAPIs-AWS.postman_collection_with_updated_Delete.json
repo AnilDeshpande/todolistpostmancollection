@@ -1,0 +1,279 @@
+{
+	"id": "7b567187-8b56-7c9f-c940-290fc5d9cf09",
+	"name": "ToDoAPIs-AWS",
+	"description": "",
+	"order": [
+		"4618f72c-ea4d-9b67-a9e1-1c8b0cb7d673",
+		"cfefed2d-2603-4008-6fda-ff26866086e5",
+		"8f8e562c-feb5-a6a0-fa37-cfec8aa15b8f",
+		"88ca4acb-f3b9-ee92-906c-09e675e9a08a",
+		"b87bead1-2f73-7277-3264-364de5ab4abe",
+		"8cac3837-0730-62bd-fe5f-011c9d499baf",
+		"8a45fb35-f60c-bd01-2c9c-0d1d69c30286",
+		"85bee56c-c27d-81c8-e425-77d749ea84ec"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1524995581995,
+	"owner": "112549",
+	"public": false,
+	"requests": [
+		{
+			"id": "4618f72c-ea4d-9b67-a9e1-1c8b0cb7d673",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://todolistmobileapp-env.ap-south-1.elasticbeanstalk.com/webapi/authors",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1524995754571,
+			"name": "Register Author",
+			"description": "",
+			"collectionId": "7b567187-8b56-7c9f-c940-290fc5d9cf09",
+			"responses": [],
+			"rawModeData": "{\n    \"authorEmailId\": \"Akshay@samplemail.com\",\n    \"authorName\": \"Akshay\",\n    \"authorPassword\":\"Akshay\"\n}"
+		},
+		{
+			"id": "85bee56c-c27d-81c8-e425-77d749ea84ec",
+			"headers": "Content-Type: application/json\ntoken: A2E5D53B9EADFA8C7622B5BB4340514A\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "A2E5D53B9EADFA8C7622B5BB4340514A",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://todolistmobileapp-env.ap-south-1.elasticbeanstalk.com/webapi/todolists/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "7b567187-8b56-7c9f-c940-290fc5d9cf09",
+			"data": null,
+			"dataMode": "params",
+			"name": "DELETE WITH ID",
+			"description": "This is a modified delete in which there is no need to send he body or payload",
+			"descriptionFormat": "html",
+			"time": 1538317716527,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "88ca4acb-f3b9-ee92-906c-09e675e9a08a",
+			"headers": "Content-Type: application/json\ntoken: 6D2DF5EF4F6478DCA47D7CF5DE5FB447\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "6D2DF5EF4F6478DCA47D7CF5DE5FB447",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://todolistmobileapp-env.ap-south-1.elasticbeanstalk.com/webapi/todolists",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1525058720573,
+			"name": "Add ToDoItem",
+			"description": "",
+			"collectionId": "7b567187-8b56-7c9f-c940-290fc5d9cf09",
+			"responses": [],
+			"rawModeData": "{\n \"todoString\":\"Collect Chocolate\",\n \"authorEmailId\":\"Akshay@samplemail.com\",\n \"place\":\"from home\"\n}"
+		},
+		{
+			"id": "8a45fb35-f60c-bd01-2c9c-0d1d69c30286",
+			"headers": "Content-Type: application/json\ntoken: 677100F0B7B7A1FF3F99228E7DBCE388\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "677100F0B7B7A1FF3F99228E7DBCE388",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://todolistmobileapp-env.ap-south-1.elasticbeanstalk.com/webapi/todolists",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1524995867693,
+			"name": "Modifiy ToDoItem - Advanced",
+			"description": "",
+			"collectionId": "7b567187-8b56-7c9f-c940-290fc5d9cf09",
+			"responses": [],
+			"rawModeData": "{\n\t\"currentToDoItem\":{\n        \"authorEmailId\": \"Akshay@samplemail.com\",\n        \"date\": 1517738371489,\n        \"id\": 2,\n        \"place\": \"from home\",\n        \"todoString\": \"Call dad\"\n    }\n    ,\n    \"proposedToDoItem\":{\n        \"authorEmailId\": \"Akshay@samplemail.com\",\n        \"date\": 1517738371489,\n        \"id\": 2,\n        \"place\": \"at Ankit's place\",\n        \"todoString\": \"Check the run time exception \"\n    }\n}"
+		},
+		{
+			"id": "8cac3837-0730-62bd-fe5f-011c9d499baf",
+			"headers": "Content-Type: application/json\ntoken: 677100F0B7B7A1FF3F99228E7DBCE388\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "677100F0B7B7A1FF3F99228E7DBCE388",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://todolistmobileapp-env.ap-south-1.elasticbeanstalk.com/webapi/todolists",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1524995854233,
+			"name": "Delete ToDoList",
+			"description": "",
+			"collectionId": "7b567187-8b56-7c9f-c940-290fc5d9cf09",
+			"responses": [],
+			"rawModeData": "{\n        \"authorEmailId\": \"Akshay@samplemail.com\",\n        \"date\": 1517738391941,\n        \"id\": 3,\n        \"place\": \"from travel time\",\n        \"todoString\": \"Complete POC\"\n    }"
+		},
+		{
+			"id": "8f8e562c-feb5-a6a0-fa37-cfec8aa15b8f",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://todolistmobileapp-env.ap-south-1.elasticbeanstalk.com/webapi/authors/signout",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1525058723017,
+			"name": "Signout",
+			"description": "",
+			"collectionId": "7b567187-8b56-7c9f-c940-290fc5d9cf09",
+			"responses": [],
+			"rawModeData": "{\n    \"authorEmailId\": \"Akshay@samplemail.com\",\n    \"authorId\": 1,\n    \"authorName\": \"Akshay\"\n}"
+		},
+		{
+			"id": "b87bead1-2f73-7277-3264-364de5ab4abe",
+			"headers": "token: 6D2DF5EF4F6478DCA47D7CF5DE5FB447\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "6D2DF5EF4F6478DCA47D7CF5DE5FB447",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://todolistmobileapp-env.ap-south-1.elasticbeanstalk.com/webapi/todolists/Akshay@samplemail.com",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1525230179916,
+			"name": "Get ToDoList by an Author",
+			"description": "",
+			"collectionId": "7b567187-8b56-7c9f-c940-290fc5d9cf09",
+			"responses": []
+		},
+		{
+			"id": "cfefed2d-2603-4008-6fda-ff26866086e5",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://todolistmobileapp-env.ap-south-1.elasticbeanstalk.com/webapi/authors/login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1525058718077,
+			"name": "Login Author",
+			"description": "",
+			"collectionId": "7b567187-8b56-7c9f-c940-290fc5d9cf09",
+			"responses": [],
+			"rawModeData": "{\n    \"authorEmailId\": \"Akshay@samplemail.com\",\n    \"authorId\": 1,\n    \"authorName\": \"Akshay\",\n    \"authorPassword\":\"Akshay\"\n}"
+		}
+	]
+}
